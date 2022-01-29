@@ -41,7 +41,7 @@ class App extends Component {
 
   handlerDeleteContact = name => {
     this.setState(({ contacts }) => ({
-      contacts: contacts.filter(contact => contact.name !== name),
+      contacts: contacts.filter(contact => contact.id !== name.id),
     }));
   };
 
